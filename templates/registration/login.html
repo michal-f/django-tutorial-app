@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load i18n admin_static %}
+{% block title %}Poll App Login{% endblock %}
+{% block content %}
+    <div class="form-signin" id="content-main">
+        <h1 class="form-signin-heading">{% trans "Login form" %}</h1>
+
+        <p class="form-signin-heading">{% trans "Please sign in" %}</p>
+        {% if form.errors %}
+            <label class="form-control-error">{% trans "Your username and password didn't match. Please try again" %}.</label>
+        {% endif %}
+        <form action="{{ app_path }}" method="post" id="login-form">{% csrf_token %}
+            <p><label class="sr-only" for="id_username">{% trans "Username" %}:</label>
+                <input class="form-control" id="id_username" type="text" name="username" maxlength="30"/>
+                {{ username }}</p>
+
+            <p><label class="sr-only" for="id_password">{% trans "Password" %}:</label>
+                <input class="form-control" type="password" name="password" id="id_password"/>
+                {{ password }}</p>
+            <input type="hidden" name="next" value="{{ next }}"/>
+            <button class="btn btn-lg btn-primary btn-block" type="submit" value="Login">{% trans "Sign in" %}</button>
+            <input type="hidden" name="next" value="/index"/>
+
+            <a class="btn btn-lg btn-primary btn-block mtop3" href="/register">{% trans "Register" %}</a>
+        </form>
+        <script type="text/javascript">
+            document.getElementById('id_username').focus()
+        </script>
+    </div>
+{% endblock %}

@@ -1,0 +1,69 @@
+{% load staticfiles %}
+{% load i18n %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <meta name="generator" content="HTML Tidy for Linux (vers 25 March 2009), see www.w3.org"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>{% block title %}Poll App Home{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap4/css/bootstrap.min.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap4/css/jumbotron.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap4/css/starter-template.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap4/css/signin.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'sweetalert/sweetalert.css' %}"/>
+</head>
+<body>
+<div class="container">
+    <form id="lang-form" action="{% url 'set_language' %}" method="post">{% csrf_token %}
+        <div id="lang-div" class="xleft btn btn-info">
+            <input name="next" type="hidden" value="{{ redirect_to }}"/>
+            <select id="language-selector" class="lang-select" name="language">
+                {% get_current_language as LANGUAGE_CODE %}
+                {% get_available_languages as LANGUAGES %}
+                {% get_language_info_list for LANGUAGES as languages %}
+                {% for language in languages %}
+                    <option class="lang-select align-right" value="{{ language.code }}"
+                            {% if language.code == LANGUAGE_CODE %}
+                            selected="selected"{% endif %}>
+                        {{ language.name_local }} ({{ language.code }})
+                    </option>
+                {% endfor %}
+            </select>
+            <input id="lang-input" class="no-border no-background" type="submit" value="{% trans "translate" %}"/>
+            {% for language in languages %}
+                {% if language.code == LANGUAGE_CODE %}
+                    {% with "/static/flags/"|add:language.code|add:".gif" as flag_url %}
+                        <img class="country-select-flag" src="{{ flag_url }}" alt="countrie_flag"/>
+                        <p>{{ flag_url }}</p>
+                    {% endwith %}
+                {% endif %}
+            {% endfor %}
+        </div>
+    </form>
+    {% if user.is_authenticated %}
+        <div class="xright">
+            <a class="btn btn-secondary pull-right btn-responsive" href="/logout/">{% trans "log out" %}</a>
+        </div>
+        <br/>
+    {% endif %}
+</div>
+<div class="container">
+    {% block content %}{% endblock %}
+    {% block js %}
+        <script type="text/javascript" src="{% static 'bootstrap4/js/bootstrap.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'jquery/jquery-1.11.3.min.map' %}"></script>
+        <script type="text/javascript" src="{% static 'jquery/jquery-1.11.3.js' %}"></script>
+        <script type="text/javascript" src="{% static 'bootstrap4/js/ie10-viewport-bug-workaround.js' %}"></script>
+        <script type="text/javascript" src="{% static 'sweetalert/sweetalert.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/utils.js' %}"></script>
+        <script type="text/javascript" src="{% url 'django.views.i18n.javascript_catalog' %}"></script>
+    {% endblock %}
+    <hr/>
+    {% include "polls/footer.html" %}
+</div>
+</body>
+</html>

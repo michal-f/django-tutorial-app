@@ -1,0 +1,59 @@
+### VirtualEnv template
+.Python
+[Bb]in
+[Ii]nclude
+[Ll]ib
+[Ss]cripts
+pyvenv.cfg
+path_settings.py
+
+### Python template
+-*.py[cod]
+__pycache__/
+*.so
+.scrapy
+env/
+cyg/
+cygwin/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+lib64/
+parts/
+sdist/
+var/
+.installed.cfg
+*.egg
+*.manifest
+*.spec
+pip-log.txt
+pip-delete-this-directory.txt
+
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+
+# Sphinx documentation
+docs/_build/git
+
+# PyBuilder
+target/
+
+#IDEA
+.idea
+
+#logs
+logd
+*log
+
+#DB
+db.sqlite3
+
+

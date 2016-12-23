@@ -1,0 +1,328 @@
+# -*- coding: utf-8 -*-
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-10-19 18:51+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
+
+#: .\mysite\forms.py:8 .\templates\admin\login.html:9
+#: .\templates\registration\login.html:13
+msgid "Username"
+msgstr "Użytkownik"
+
+#: .\mysite\forms.py:9
+msgid "This value must contain only letters, numbers and underscores."
+msgstr "Dozwolone są jedynie litery, cyfry i podkreślenia."
+
+#: .\mysite\forms.py:10
+msgid "Email address"
+msgstr "Adres E-mail"
+
+#: .\mysite\forms.py:12 .\templates\admin\login.html:11
+#: .\templates\registration\login.html:17
+msgid "Password"
+msgstr "Hasło"
+
+#: .\mysite\forms.py:15
+msgid "Password (again)"
+msgstr "Powtórz hasło"
+
+#: .\mysite\forms.py:22
+msgid "The username already exists. Please try another one."
+msgstr "Nazwa Użytkownika już zajęta. Spróbuj wymyślić inną."
+
+#: .\mysite\forms.py:27
+msgid "The two password fields did not match."
+msgstr "Podane hasła nie pasują do siebie"
+
+#: .\mysite\settings.py:55
+msgid "German"
+msgstr "Niemiecki"
+
+#: .\mysite\settings.py:56
+msgid "English"
+msgstr "Angielski"
+
+#: .\mysite\settings.py:57
+msgid "Polish"
+msgstr "Polski"
+
+#: .\polls\templates\base.html:36
+msgid "translate"
+msgstr "tłumacz"
+
+#: .\polls\templates\base.html:48
+msgid "log out"
+msgstr "wyloguj"
+
+#: .\polls\templates\polls\detail.html:19
+#: .\polls\templates\polls\results.html:13
+msgid "back"
+msgstr "powrót"
+
+#: .\polls\templates\polls\detail.html:20
+msgid "Vote"
+msgstr "Głosuj"
+
+#: .\polls\templates\polls\detail.html:52
+#: .\polls\templates\polls\index.html:49
+#: .\polls\templates\polls\question_form.html:68
+msgid "choices"
+msgstr "wybory"
+
+#: .\polls\templates\polls\detail.html:53
+#: .\polls\templates\polls\index.html:50
+msgid "time"
+msgstr "czas"
+
+#: .\polls\templates\polls\detail.html:53
+msgid "date"
+msgstr "data"
+
+#: .\polls\templates\polls\detail.html:54
+#: .\polls\templates\polls\index.html:51
+#: .\polls\templates\polls\question_form.html:69
+msgid "action's"
+msgstr "akcje"
+
+#: .\polls\templates\polls\detail.html:90
+#: .\polls\templates\polls\index.html:92
+#: .\polls\templates\polls\question_form.html:86
+msgid "delete"
+msgstr "usuń"
+
+#: .\polls\templates\polls\detail.html:92
+#: .\polls\templates\polls\index.html:94
+#: .\polls\templates\polls\question_form.html:85
+msgid "edit"
+msgstr "edytuj"
+
+#: .\polls\templates\polls\footer.html:4
+msgid "All Rights Reserved"
+msgstr "Wszystkie prawa zastrzeżone"
+
+#: .\polls\templates\polls\footer.html:5
+msgid "Jumbotron example"
+msgstr "Przykład Jumbotron"
+
+#: .\polls\templates\polls\footer.html:7
+msgid "dark theme"
+msgstr "ciemny motyw"
+
+#: .\polls\templates\polls\index.html:11
+msgid "Django 1.8 - Polls App"
+msgstr "Django 1.8 - aplikacja do Ankiet"
+
+#: .\polls\templates\polls\index.html:13
+msgid "Application"
+msgstr "Aplikacja"
+
+#: .\polls\templates\polls\index.html:13
+msgid "from"
+msgstr "z"
+
+#: .\polls\templates\polls\index.html:13
+msgid "django"
+msgstr ""
+
+#: .\polls\templates\polls\index.html:13
+msgid "tutorial"
+msgstr "tutorial"
+
+#: .\polls\templates\polls\index.html:13
+msgid "with added"
+msgstr "z dodanym"
+
+#: .\polls\templates\polls\index.html:14
+#: .\polls\templates\polls\question_form.html:69
+msgid "and"
+msgstr "i"
+
+#: .\polls\templates\polls\index.html:14
+msgid "login functionality"
+msgstr "funkcjonalnością logowania"
+
+#: .\polls\templates\polls\index.html:18
+msgid "Create a new question:"
+msgstr "Stwórz nowe pytanie:"
+
+#: .\polls\templates\polls\index.html:48
+msgid "questions"
+msgstr "pytania"
+
+#: .\polls\templates\polls\index.html:75
+msgid ""
+" vote\n"
+"                                                    "
+msgid_plural " votes "
+msgstr[0] "głos"
+msgstr[1] "głosy"
+msgstr[2] "głosów"
+
+#: .\polls\templates\polls\index.html:78
+msgid "no votes"
+msgstr "brak głosów"
+
+#: .\polls\templates\polls\lll.html:13
+msgid "View this category in:"
+msgstr "Przeglądaj stronę w języku:"
+
+#: .\polls\templates\polls\lll.html:15
+msgid "Available Languages:"
+msgstr "Dostępne Języki:"
+
+#: .\polls\templates\polls\question_form.html:12
+msgid "Back to Home"
+msgstr "Powrót do strony głównej"
+
+#: .\polls\templates\polls\question_form.html:16
+msgid "Poll App Editor Form"
+msgstr "Formularz edycji pytania"
+
+#: .\polls\templates\polls\question_form.html:19
+msgid "Poll App Create Question"
+msgstr "Stwórz nowe pytanie:"
+
+#: .\polls\templates\polls\question_form.html:29
+msgid "Question"
+msgstr "Pytanie"
+
+#: .\polls\templates\polls\question_form.html:31
+msgid "Question text:"
+msgstr "treść Pytania:"
+
+#: .\polls\templates\polls\question_form.html:47
+msgid "edit question"
+msgstr "edytuj pytanie"
+
+#: .\polls\templates\polls\question_form.html:51
+msgid "save"
+msgstr "zapisz"
+
+#: .\polls\templates\polls\question_form.html:60
+msgid "choice text:"
+msgstr "treść odpowiedzi:"
+
+#: .\polls\templates\polls\question_form.html:63
+msgid "add new choice"
+msgstr "dodaj odpowiedź"
+
+#: .\polls\templates\polls\question_form.html:69
+msgid "votes"
+msgstr "głosy"
+
+#: .\polls\templates\polls\results.html:9
+msgid "vote"
+msgstr "głos"
+
+#: .\polls\templates\polls\results.html:14
+msgid "Vote again?"
+msgstr "Głosuj ponownie?"
+
+#: .\polls\views.py:91
+msgid ">>> IN >>>"
+msgstr ""
+
+#: .\polls\views.py:91
+msgid "Ajax"
+msgstr ""
+
+#: .\polls\views.py:110
+msgid "nothing to delete!"
+msgstr "nic do usunięcia! "
+
+#: .\polls\views.py:116
+msgid ">>>>> choice is already in database!"
+msgstr ">>>>> Wybór jest już w bazie danych!"
+
+#: .\polls\views.py:185
+msgid "<<< OUT <<< "
+msgstr ""
+
+#: .\polls\views.py:185
+msgid "request"
+msgstr "żądanie"
+
+#: .\polls\views.py:185
+msgid "successfully"
+msgstr "skutecznie"
+
+#: .\polls\views.py:185
+msgid "processed"
+msgstr "przetworzone"
+
+#: .\polls\views.py:186
+msgid "returning"
+msgstr "zwracanie"
+
+#: .\polls\views.py:186
+msgid "response"
+msgstr "odpowiedź"
+
+#: .\templates\admin\login.html:7
+msgid "Django Admin"
+msgstr ""
+
+#: .\templates\admin\login.html:8 .\templates\registration\login.html:8
+msgid "Please sign in"
+msgstr "Proszę zaloguj się"
+
+#: .\templates\admin\login.html:14 .\templates\registration\register.html:13
+msgid "Log in"
+msgstr "Zaloguj się"
+
+#: .\templates\admin\login.html:14 .\templates\registration\login.html:21
+msgid "Sign in"
+msgstr "Zaloguj"
+
+#: .\templates\registration\logged_out.html:6
+msgid "Logged out"
+msgstr "Wylogowano"
+
+#: .\templates\registration\logged_out.html:8
+msgid "Thanks for spending some quality time with the site today"
+msgstr "Dziękujemy za poświęcenie odrobiny czasu na interakcję z stroną"
+
+#: .\templates\registration\logged_out.html:11
+msgid "Log in again"
+msgstr "Zaloguj się ponownie"
+
+#: .\templates\registration\login.html:6
+msgid "Login form"
+msgstr "Formularz Logowania"
+
+#: .\templates\registration\login.html:10
+msgid "Your username and password didn't match. Please try again"
+msgstr "Twoja nazwa użytkownika nie pasują do siebie. Spróbuj ponownie"
+
+#: .\templates\registration\login.html:24
+msgid "Register"
+msgstr "Rejestruj"
+
+#: .\templates\registration\register.html:6
+#: .\templates\registration\register.html:11
+msgid "Registration"
+msgstr "Rejestracja"
+
+#: .\templates\registration\success.html:5
+msgid "Registration Completed Successfully"
+msgstr "Rejestracja zakończona pomyślnie"
+
+#: .\templates\registration\success.html:6
+msgid "start"
+msgstr "start"

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}Poll App Results{% endblock %}
+{% block content %}
+    <div class="container jumbotron">
+        <h1>{{ question.question_text }}</h1>
+        <ul>
+            {% for choice in question.choice_set.all %}
+                <li>{{ choice.choice_text }} : <strong>{{ choice.votes }}</strong> {% trans "vote" %}{{ choice.votes|pluralize }}
+                </li>
+            {% endfor %}
+        </ul>
+        <a class="btn btn-secondary" href="/index">{% trans "back" %}</a>
+        <a class="btn btn-primary" href="{% url 'polls:detail' question.id %}">{% trans "Vote again?" %}</a>
+    </div>
+{% endblock %}

@@ -1,0 +1,233 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-10-19 18:49+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
+
+#: .\static\ajax\ajax_script.js:25
+msgid "String parameter not valid!"
+msgstr "Parametr tekstowy nie jest właściwy!"
+
+#: .\static\ajax\ajax_script.js:25
+msgid "Post Error"
+msgstr "Błąd żądania"
+
+#: .\static\ajax\ajax_script.js:44
+msgid "POST action not found:"
+msgstr "Nie znaleziono wymaganego żądania:"
+
+#: .\static\ajax\ajax_script.js:44 .\static\ajax\ajax_script.js:49
+#: .\static\ajax\ajax_script.js:56 .\static\ajax\ajax_script.js:99
+#: .\static\ajax\ajax_script.js:129
+msgid "ajax post handler"
+msgstr "Żądanie ajaxowe"
+
+#: .\static\ajax\ajax_script.js:49
+msgid "String param not valid!"
+msgstr "Parametr tesktowy nie właściwy!"
+
+#: .\static\ajax\ajax_script.js:69
+msgid "Choice already in db. Unable to add."
+msgstr "Odpowiedź jest już w BD. Nie można dodać kolejnej."
+
+#: .\static\ajax\ajax_script.js:69
+msgid "Duplicates not allowed!"
+msgstr "Duplikaty nie są dozwolone!"
+
+#: .\static\ajax\ajax_script.js:71
+msgid "Choice saved successfully!"
+msgstr "Odpowiedź pomyślnie zapisana!"
+
+#: .\static\ajax\ajax_script.js:71
+msgid "Choice saved!"
+msgstr "Odpowiedź zapisana!"
+
+#: .\static\ajax\ajax_script.js:74
+msgid ""
+"Vote added successfully!\n"
+"Vote count:"
+msgstr ""
+"Pomyślnie dodano głos!\n"
+" aktualna liczba głosów:"
+
+#: .\static\ajax\ajax_script.js:74
+msgid "Vote Added!"
+msgstr "Dodano głos!"
+
+#: .\static\ajax\ajax_script.js:77
+msgid ""
+"Vote removed successfully!\n"
+"Vote count:"
+msgstr ""
+"Pomyślnie usunięto głos!\n"
+" aktualna liczba głosów:"
+
+#: .\static\ajax\ajax_script.js:77
+msgid "Vote Removed!"
+msgstr "Głos usunięty!"
+
+#: .\static\ajax\ajax_script.js:80
+msgid "No Choice found in db!"
+msgstr "Odpowiedź nie została znaleziona!"
+
+#: .\static\ajax\ajax_script.js:80
+msgid "Choice not Found!"
+msgstr "Odpowiedź nie została znaleziona!"
+
+#: .\static\ajax\ajax_script.js:83
+msgid "No Votes Found!"
+msgstr "Nie znaleziono głosów!"
+
+#: .\static\ajax\ajax_script.js:83
+msgid "No Votes!"
+msgstr "Brak Głosów!"
+
+#: .\static\ajax\ajax_script.js:85
+msgid "No Choices Found in db!"
+msgstr "Nie znaleziono odpowiedźi w BD"
+
+#: .\static\ajax\ajax_script.js:85
+msgid "Empty Response!"
+msgstr "Pusta odpowieź żądania!"
+
+#: .\static\ajax\ajax_script.js:99
+msgid "post Error:"
+msgstr "Błąd metody POST:"
+
+#: .\static\ajax\ajax_script.js:107
+msgid "Are you sure?"
+msgstr "Jesteś pewny?"
+
+#: .\static\ajax\ajax_script.js:108
+msgid "You will not be able to recover this choice!"
+msgstr "Nie będziesz w stanie odzyskać tej odpowiedźi!"
+
+#: .\static\ajax\ajax_script.js:112
+msgid "Yes, delete it!"
+msgstr "Tak, należy usunąć!"
+
+#: .\static\ajax\ajax_script.js:113
+msgid "No, cancel !"
+msgstr "Nie! Anulowanie"
+
+#: .\static\ajax\ajax_script.js:119
+msgid "Choice has been deleted."
+msgstr "Odpowiedź została usunięta"
+
+#: .\static\ajax\ajax_script.js:119
+msgid "deleted"
+msgstr "usunięto"
+
+#: .\static\ajax\ajax_script.js:121
+msgid "Cancelled"
+msgstr "Anulowano"
+
+#: .\static\ajax\ajax_script.js:121
+msgid "Choice not deleted"
+msgstr "Odpowiedź Nie usunięta"
+
+#: .\static\ajax\ajax_script.js:130
+msgid "error in POST - Refreshing"
+msgstr "Błąd w metodzie POST - Odświeżanie"
+
+#: .\static\ajax\ajax_script.js:244 .\static\ajax\ajax_script.js:253
+msgid "Minimum number of characters for a Choice is 2!"
+msgstr "Minimalna liczba znaków dla odpowiedzi wynosi 2!"
+
+#: .\static\ajax\ajax_script.js:244 .\static\ajax\ajax_script.js:253
+msgid "Choice to short!"
+msgstr "Odpowiedź za krótka!"
+
+#: .\static\ajax\ajax_script.js:269
+msgid "Choice changes saved to db!"
+msgstr "zmiany w odpowiedzi zapisane do BD!"
+
+#: .\static\ajax\ajax_script.js:269
+msgid "Saved Successfully!"
+msgstr "Pomyślnie zapisano!"
+
+#: .\static\ajax\ajax_script.js:270
+msgid "Saved"
+msgstr "Zapisano"
+
+#: .\static\ajax\ajax_script.js:293
+msgid "save !"
+msgstr "zapisz !"
+
+#: .\static\ajax\ajax_script.js:363
+msgid ""
+"Question changed successfully!\n"
+"Current Question ID:"
+msgstr ""
+"z Powodzeniem zmieniono pytanie!\n"
+"nr ID pytania:"
+
+#: .\static\ajax\ajax_script.js:363
+msgid "Question changed!"
+msgstr "Zmieniono pytanie!"
+
+#: .\static\ajax\ajax_script.js:391
+msgid "Save currently edited Question to show dropdown list!"
+msgstr "Zapisz aktualnie edytowane pytanie żeby otworzyć listę pytań!"
+
+#: .\static\ajax\ajax_script.js:391
+msgid "Question not saved"
+msgstr "Pytanie nie zapisane!"
+
+#: .\static\ajax\ajax_script.js:410
+msgid "Minimum number of characters for a Question is 2!"
+msgstr "Minimalna liczba znaków dla pytania wynosi 2!"
+
+#: .\static\ajax\ajax_script.js:410
+msgid "Question to short!"
+msgstr "Pytanie za krótkie!"
+
+#: .\static\ajax\ajax_script.js:414
+msgid "Question saved!"
+msgstr "Pytanie zapisane!"
+
+#: .\static\ajax\ajax_script.js:415
+msgid "What do you want to do now?"
+msgstr "Co chcesz teraz robić?"
+
+#: .\static\ajax\ajax_script.js:419
+msgid "go to home page"
+msgstr "idź do strony głównej"
+
+#: .\static\ajax\ajax_script.js:420
+msgid "continue edition"
+msgstr "kontynuacja edycji"
+
+#: .\static\ajax\ajax_script.js:435
+msgid "edit question"
+msgstr "edytuj pytanie"
+
+#: .\static\ajax\ajax_script.js:449 .\static\ajax\ajax_script.js:451
+msgid "save question"
+msgstr "zapisz pytanie"
+
+#: .\static\js\utils.js:49
+msgid "High Contrast View"
+msgstr "Wysoki Kontrast"
+
+#: .\static\js\utils.js:61
+msgid "Standard View"
+msgstr "Widok Standardowy"
+
+#~ msgid "Text to translate AJAX FILE"
+#~ msgstr "Tekst testowy!!! AJAX PLIK"

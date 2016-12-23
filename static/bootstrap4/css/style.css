@@ -1,0 +1,127 @@
+body {
+    /*background: white url("../images/background.gif") repeat right bottom;*/
+    background: black;
+    background-size: 100%;
+    color: #ffffff;
+}
+
+.end_buttons {
+    visibility: hidden;
+}
+
+.out_put {
+    font-family: 'Helvetica';
+    font-size: 14px;
+    color: #00ff2b;
+    visibility: hidden;
+}
+
+.out_put:hover {
+    font-family: 'Helvetica';
+    font-size: 14px;
+    color: #fff2ed;
+    visibility: hidden;
+}
+
+.show_output {
+    visibility: visible;
+    color: #00ff2b;
+}
+
+.show_output:hover {
+    visibility: visible;
+    color: #7cff0a;
+}
+
+h1 {
+    margin-top: 3%;
+    /*font-family: Arial;*/
+    text-transform: uppercase;
+    text-indent: 2%;
+    /*font-size: 29px;*/
+    color: white;
+    border-radius: 1em;
+    border: 0.05em solid #fff;
+    box-shadow: 0 0 0 0.1em #00bdff;
+    margin-right: 0.75em;
+    cursor: pointer;
+    line-height: 2.5;
+    font-weight: 700;
+}
+
+h1:hover {
+    /*font-size: 29px;*/
+    font-weight: 900;
+    color: #4afdff;
+    text-decoration: none;
+}
+
+h2 {
+    margin-top: 1%;
+    margin-left: 2%;
+    margin-bottom: 1%;
+    /*font-family: Arial;*/
+    text-transform: uppercase;
+    text-indent: 2%;
+    /*font-size: 29px;*/
+    color: white;
+    border-radius: 1em;
+    border: 0.02em solid #fff;
+    box-shadow: 0 0 0 0.1em #00bdff;
+    margin-right: 0.75em;
+    cursor: pointer;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+h2:hover {
+    /*font-size: 29px;*/
+    font-weight: 700;
+    color: #4afdff;
+    text-decoration: none;
+}
+
+.radio {
+    border-radius: 1em; /*hard border*/
+    border: 0.125em solid #fff;
+    box-shadow: 0 0 0 0.15em rgba(255, 62, 213, 0.91); /*light shadow*/
+    margin-right: 0.75em;
+    transition: 0.5s ease all; /*animation here*/
+}
+
+.radio:hover {
+    border-radius: 1em; /*hard border*/
+    border: 0.125em solid #0051ff;
+    box-shadow: 0 0 0 0.15em #ceffd7; /*light shadow*/
+    margin-right: 0.75em;
+    transition: 0.5s ease all; /*animation here*/
+}
+
+.radio:checked {
+    border-radius: 1em; /*hard border*/
+    border: 0.125em solid #29ff19;
+    box-shadow: 0 0 0 0.15em #00bdff; /*light shadow*/
+    margin-right: 0.75em;
+    transition: 0.5s ease all; /*animation here*/
+}
+
+[type="radio"] {
+    content: '';
+    display: inline-block;
+    width: 4em;
+    height: 4em;
+    vertical-align: -0.25em;
+    -webkit-box-pack: start;
+}
+
+[type="radio"]:checked {
+    border: 0.125em solid #ff510c;
+    background: #c60a00;
+    box-shadow: 0 0 0 0.25em #ff8610;
+}
+
+li {
+    background-color: rgba(0, 0, 0, 0.7);
+    background-size: 100%;
+    color: #ffffff;
+}

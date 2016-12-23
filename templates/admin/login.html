@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load i18n admin_static %}
+{% block title %}Admin Login{% endblock %}
+{% block content %}
+    <div id="content-main">
+        <form class="form-signin" method="post" action="{{ app_path }}" method="post" id="login-form">{% csrf_token %}
+            <h1 class="form-signin-heading">{% trans "Django Admin" %}</h1>
+            <h6 class="form-signin-heading">{% trans "Please sign in" %}</h6>
+            <p><label class="sr-only" for="id_username">{% trans "Username" %}:</label>
+                <input class="form-control" id="id_username" type="text" name="username" maxlength="30"/></p>
+            <p><label class="sr-only" for="id_password">{% trans "Password" %}:</label>
+                <input class="form-control" type="password" name="password" id="id_password"/></p>
+            <input type="hidden" name="next" value="{{ next }}"/>
+            <button class="btn btn-lg btn-primary btn-block" type="submit" value="{% trans 'Log in' %}">{% trans "Sign in" %}</button>
+            <input type="hidden" name="next" value="{{ request.get_full_path }}"/>
+        </form>
+        <script type="text/javascript">
+            document.getElementById('id_username').focus()
+        </script>
+    </div>
+{% endblock %}

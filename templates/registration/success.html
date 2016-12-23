@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block content %}
+    <div class="jumbotron">
+        <h1>{% trans "Registration Completed Successfully" %}
+            <a class="container btn btn-success btn-lg" href="/index">{% trans "start" %}</a>
+        </h1>
+    </div>
+{% endblock %}

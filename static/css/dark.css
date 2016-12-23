@@ -1,0 +1,169 @@
+body {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.bluetxt {
+    color: #ffffff;
+}
+
+.bluetxt:hover {
+    color: #ffffff;
+}
+
+th {
+    border-color: #141414 !important;
+    background-color: #000918;
+    color: white;
+}
+
+td:nth-child(3) {
+    color: #06bdff;
+    font-size: 70%;
+    font-weight: 100;
+}
+
+table, td {
+    color: white;
+    border-width: 1px !important;
+    border-color: gray !important;
+    background-color: #141414;
+}
+
+input {
+    background-color: #141414;
+}
+
+input:hover {
+    background-color: #141414;
+    color: white;
+}
+
+th[id^='thch'], th[id*=' thch'] {
+    color: #f5f5f5;
+    background-color: #1a1a1a;
+}
+
+th[id^='thnr'], th[id*=' thnr'] {
+    color: grey;
+    background-color: #1a1a1a;
+}
+
+th[id^='thv'], th[id*=' thv'] {
+    background-color: #1a1a1a;
+    color: lightblue;
+}
+
+a {
+    color: #ffffff;
+}
+
+a:hover {
+    color: #06bdff;
+}
+
+label:hover {
+    background-color: #1a1a1a;
+}
+
+.pagi {
+    background-color: #1a1a1a !important;
+    color: #a1c9ff !important;
+}
+
+.pagi:hover {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+}
+
+.edited {
+    border-color: lawngreen;
+    border-width: 3px 1px 3px 6px;
+    background: #0e2400;
+    color: #7dff00;
+}
+
+.edited:hover {
+    border-color: #92ff00;
+    background: black;
+    color: #ffffff;
+}
+
+.dropdown {
+    border-color: #06bdff;
+    /*border-width: 3px;*/
+    border-width: 3px 4px 3px 1px;
+    background: #0c3235;
+    color: #ffffff;
+}
+
+.dropdown:hover {
+    border-color: #06bdff;
+    background: black;
+    color: #ffffff;
+}
+
+.jumbotron {
+    background-color: #141414;
+    border-width: 1px !important;
+    border-color: gray !important;
+}
+
+.rowEditedNS label {
+    color: #b6003c !important;
+    zoom: 1.1;
+    border-width: 5px !important;
+    border-color: #00ff06 !important;
+}
+
+.rowEditedNS :hover {
+    background: #000000 !important;
+}
+
+.rowEditedNS :hover label {
+    background: #000000 !important;
+    color: #00dcf6 !important;
+}
+
+#language-selector {
+    background-color: transparent;
+    color: #f5f5f5;
+}
+
+#language-selector:hover {
+    background-color: transparent;
+    color: #f5f5f5;
+}
+
+#language-selector:focus {
+    background-color: #000000;
+    color: #f5f5f5;
+}
+
+#lang-div:hover {
+    color: #f5f5f5;
+}
+
+.sweet-alert {
+    background-color: #141414 !important;
+}
+
+.sa-fix {
+    background-color: #141414 !important;
+}
+
+.sweet-alert .sa-icon.sa-success::before, .sweet-alert .sa-icon.sa-success::after {
+    background-color: #141414 !important;
+}
+
+.sweet-alert h2 {
+    color: #06bdff !important;
+}
+
+#register-form {
+    background-color: black;
+}
+
+#register-form th {
+    background-color: transparent;
+}

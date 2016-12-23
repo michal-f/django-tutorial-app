@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block content %}
+    <div id="register-form" class="jumbotron">
+        <form class="container form" method="post" action=".">{% csrf_token %}
+            <h1 class="form-signin form-signin-heading">{% trans "Registration" %}</h1>
+            <table class="jumbotron form-control form-signin" border="0">
+                {{ form.as_table }}
+            </table>
+            <input style="margin-top: 5px;" class="form-signin btn btn-lg btn-primary btn-block" type="submit"
+                   value="{% trans "Registration" %}"/>
+            <a style="margin-top: 5px;" href="/login"
+               class="form-signin  btn btn-lg btn-primary btn-block">{% trans "Log in" %}</a>
+        </form>
+    </div>
+{% endblock %}

@@ -1,0 +1,232 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-10-19 18:49+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\static\ajax\ajax_script.js:25
+msgid "String parameter not valid!"
+msgstr "String-Parameter nicht gültig!"
+
+#: .\static\ajax\ajax_script.js:25
+msgid "Post Error"
+msgstr "POST method Fehler"
+
+#: .\static\ajax\ajax_script.js:44
+msgid "POST action not found:"
+msgstr "POST Aktion nicht gefunden"
+
+#: .\static\ajax\ajax_script.js:44 .\static\ajax\ajax_script.js:49
+#: .\static\ajax\ajax_script.js:56 .\static\ajax\ajax_script.js:99
+#: .\static\ajax\ajax_script.js:129
+msgid "ajax post handler"
+msgstr "ajax Post-Handler"
+
+#: .\static\ajax\ajax_script.js:49
+msgid "String param not valid!"
+msgstr "String param nicht gültig!"
+
+#: .\static\ajax\ajax_script.js:69
+msgid "Choice already in db. Unable to add."
+msgstr "Antwort bereits in db. Kann nicht hinzufügen."
+
+#: .\static\ajax\ajax_script.js:69
+msgid "Duplicates not allowed!"
+msgstr "Duplikate nicht erlaubt!"
+
+#: .\static\ajax\ajax_script.js:71
+msgid "Choice saved successfully!"
+msgstr "Antwort erfolgreich gespeichert"
+
+#: .\static\ajax\ajax_script.js:71
+msgid "Choice saved!"
+msgstr "Antwort gespeichert!"
+
+#: .\static\ajax\ajax_script.js:74
+msgid ""
+"Vote added successfully!\n"
+"Vote count:"
+msgstr ""
+"Stimme erfolgreich hinzugefügt!\n"
+"Stimmen zahl:"
+
+#: .\static\ajax\ajax_script.js:74
+msgid "Vote Added!"
+msgstr "Stimme abgegeben!"
+
+#: .\static\ajax\ajax_script.js:77
+msgid ""
+"Vote removed successfully!\n"
+"Vote count:"
+msgstr ""
+"Stimme erfolgreich entfernt!\n"
+"Stimmen zahl:"
+
+#: .\static\ajax\ajax_script.js:77
+msgid "Vote Removed!"
+msgstr "Stimme entfernt!"
+
+#: .\static\ajax\ajax_script.js:80
+msgid "No Choice found in db!"
+msgstr "Keine Antwort in der db gefunden!"
+
+#: .\static\ajax\ajax_script.js:80
+msgid "Choice not Found!"
+msgstr "Antwort nicht gefunden!"
+
+#: .\static\ajax\ajax_script.js:83
+msgid "No Votes Found!"
+msgstr "Keine Bewertungen gefunden!"
+
+#: .\static\ajax\ajax_script.js:83
+msgid "No Votes!"
+msgstr "Keine Bewertungen!"
+
+#: .\static\ajax\ajax_script.js:85
+msgid "No Choices Found in db!"
+msgstr "Keine Antwort in der db gefunden!"
+
+#: .\static\ajax\ajax_script.js:85
+msgid "Empty Response!"
+msgstr "leere method response!"
+
+#: .\static\ajax\ajax_script.js:99
+msgid "post Error:"
+msgstr "POST-Fehler:"
+
+#: .\static\ajax\ajax_script.js:107
+msgid "Are you sure?"
+msgstr "Bist du sicher?"
+
+#: .\static\ajax\ajax_script.js:108
+msgid "You will not be able to recover this choice!"
+msgstr "Sie werden nicht in der Lage, diese Wahl zu erholen!"
+
+#: .\static\ajax\ajax_script.js:112
+msgid "Yes, delete it!"
+msgstr "Ja, löschen Sie es!"
+
+#: .\static\ajax\ajax_script.js:113
+msgid "No, cancel !"
+msgstr "Nein, Absagen !"
+
+#: .\static\ajax\ajax_script.js:119
+msgid "Choice has been deleted."
+msgstr "Antwort wurde gelöscht."
+
+#: .\static\ajax\ajax_script.js:119
+msgid "deleted"
+msgstr "gelöscht"
+
+#: .\static\ajax\ajax_script.js:121
+msgid "Cancelled"
+msgstr "Abgesagt"
+
+#: .\static\ajax\ajax_script.js:121
+msgid "Choice not deleted"
+msgstr "Antwort nicht gelöscht"
+
+#: .\static\ajax\ajax_script.js:130
+msgid "error in POST - Refreshing"
+msgstr "Fehler in POST - Aktualisieren"
+
+#: .\static\ajax\ajax_script.js:244 .\static\ajax\ajax_script.js:253
+msgid "Minimum number of characters for a Choice is 2!"
+msgstr "Mindestanzahl der Zeichen für eine Antwort ist 2"
+
+#: .\static\ajax\ajax_script.js:244 .\static\ajax\ajax_script.js:253
+msgid "Choice to short!"
+msgstr "Antwort zu kurz!"
+
+#: .\static\ajax\ajax_script.js:269
+msgid "Choice changes saved to db!"
+msgstr "Antwort Änderungen gespeichert in der db!"
+
+#: .\static\ajax\ajax_script.js:269
+msgid "Saved Successfully!"
+msgstr "Erfolgreich gespeichert!"
+
+#: .\static\ajax\ajax_script.js:270
+msgid "Saved"
+msgstr "Gespeichert"
+
+#: .\static\ajax\ajax_script.js:293
+msgid "save !"
+msgstr "Speicher!"
+
+#: .\static\ajax\ajax_script.js:363
+msgid ""
+"Question changed successfully!\n"
+"Current Question ID:"
+msgstr ""
+"Frage erfolgreich geändert! \n"
+"Aktuelle Frage ID:"
+
+#: .\static\ajax\ajax_script.js:363
+msgid "Question changed!"
+msgstr "Frage geändert"
+
+#: .\static\ajax\ajax_script.js:391
+msgid "Save currently edited Question to show dropdown list!"
+msgstr "Speichern Sie aktuell bearbeitete Frage um Dropdown-Liste zu zeigen"
+
+#: .\static\ajax\ajax_script.js:391
+msgid "Question not saved"
+msgstr "Frage nicht gespeichert"
+
+#: .\static\ajax\ajax_script.js:410
+msgid "Minimum number of characters for a Question is 2!"
+msgstr "Mindestanzahl der Zeichen für eine Frage ist 2"
+
+#: .\static\ajax\ajax_script.js:410
+msgid "Question to short!"
+msgstr "Frage an Kurz"
+
+#: .\static\ajax\ajax_script.js:414
+msgid "Question saved!"
+msgstr "Frage gespeichert!"
+
+#: .\static\ajax\ajax_script.js:415
+msgid "What do you want to do now?"
+msgstr "Was willst du jetzt machen?"
+
+#: .\static\ajax\ajax_script.js:419
+msgid "go to home page"
+msgstr "Zur Einstiegsseite"
+
+#: .\static\ajax\ajax_script.js:420
+msgid "continue edition"
+msgstr "weiter bearbeiten "
+
+#: .\static\ajax\ajax_script.js:435
+msgid "edit question"
+msgstr "Frage bearbeiten"
+
+#: .\static\ajax\ajax_script.js:449 .\static\ajax\ajax_script.js:451
+msgid "save question"
+msgstr "Frage speichern"
+
+#: .\static\js\utils.js:49
+msgid "High Contrast View"
+msgstr "Kontrastansicht"
+
+#: .\static\js\utils.js:61
+msgid "Standard View"
+msgstr "Standard Ansicht"
+
+#~ msgid "Text to translate AJAX FILE"
+#~ msgstr "Text zu übersetzen AJAX FILE "

@@ -1,0 +1,4 @@
+django
+django-jquery
+django-vanilla-views
+django-countries

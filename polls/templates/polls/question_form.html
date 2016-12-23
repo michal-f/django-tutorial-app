@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+{% block title %}Poll App Question Form{% endblock %}
+{% load staticfiles %}
+{% load i18n %}
+{% block js %}
+    {{ block.super }}
+    <script type="text/javascript" src="{% static 'ajax/ajax_script.js' %}"></script>
+{% endblock %}
+{% block content %}
+    {% autoescape on %}
+    {% endautoescape %}
+    <a href="{% url 'polls:index' %}" class="btn btn-secondary pull-right btn-responsive">{% trans "Back to Home" %}</a>
+    <div class="header center">
+        <h1 class="header text-center">
+            {% if question %}
+                {% trans "Poll App Editor Form" %}
+                <input type="hidden" id="question_id" name="variable" value="{{ question.id }}"/>
+            {% else %}
+                {% trans "Poll App Create Question" %}
+            {% endif %}
+        </h1>
+    </div>
+    <hr/>
+
+    <form method="post" action=".">
+        <div class="xdiv">
+            <div class="xleft">
+                {% if question %}
+                    <button id="question_button"
+                            class="form-control-lg btn-responsive btn-info">{% trans "Question" %}</button>
+                {% else %}
+                    <label class="btn-lg btn-info btn-responsive ">{% trans "Question text:" %}</label>
+                {% endif %}
+            </div>
+            {% csrf_token %}
+            <label class="xmid">
+                {% for field in form.visible_fields %}
+                    {{ field }}
+                    {% if field.errors %}
+                        <label class="xdiv btn-danger btn">{{ field.errors }}</label>
+                    {% endif %}
+                {% endfor %}
+            </label>
+
+            <div class="xright">
+                {% csrf_token %}
+                {% if question %}
+                    <input id="main_save_button" type="submit" class="form-control-lg btn-primary btn-responsive"
+                           value="{% trans "edit question" %}"/>
+                {% else %}
+                    <input id="main_save_button" type="submit"
+                           class="form-control-lg btn-success btn-responsive"
+                           value="{% trans "save" %}"/>
+                {% endif %}
+            </div>
+        </div>
+    </form>
+
+    {% if question %}
+        <form class="xdiv" method="post" action="">
+            {% csrf_token %}
+            <div class="form-control-lg btn-lg  btn-responsive text-capitalize">{% trans "choice text:" %}</div>
+            <input class="xmid bluetxt btn-responsive form-control-lg " type="text" id="ajax_test_in"/>
+            <input type="submit" class="form-control-lg btn-primary btn-responsive" id="ajax_add"
+                   value="{% trans "add new choice" %}"/>
+        </form>
+        <br/>
+        <table id="choice_table" class="table choices table-hover table-active">
+            <tr class="text-uppercase">
+                <th class="row-1 row-Choice">{% trans "choices" %}</th>
+                <th class="row-2 row-Votes">{% trans "votes" %} {% trans "and" %} {% trans "action's" %}</th>
+            </tr>
+            {% for choice in question.choice_set.all %}
+                <tr>
+                    <td>
+                        <label for="choice_{{ forloop.counter0 }}"
+                               class="pull-left">{{ choice.choice_text }}</label>
+                        <input id="choice_{{ forloop.counter0 }}" class="clickedit tableWrapper" type="text"
+                               value="{{ choice.choice_text }}"/>
+                    </td>
+                    <td>
+                        <div class="small-padding btn btn-info">
+                            <button onclick="plusFunction()" class="widther-txt addVote btn-info">+</button>
+                            <label class="no-padding" id="votes_{{ forloop.counter0 }}">{{ choice.votes }}</label>
+                            <button onclick="minusFunction()" class="widther-txt remVote btn-info">-</button>
+                        </div>
+                        <button class="rowEdit btn btn-primary">{% trans "edit" %}</button>
+                        <button class="rowDelete btn btn-danger">{% trans "delete" %}</button>
+                    </td>
+                </tr>
+            {% endfor %}
+        </table>
+    {% endif %}
+
+{% endblock %}

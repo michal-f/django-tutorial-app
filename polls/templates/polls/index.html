@@ -1,0 +1,131 @@
+{% extends "base.html" %}
+{% block title %}Poll App Home{% endblock %}
+{% load staticfiles %}
+{% load i18n %}
+{% block js %}
+    {{ block.super }}
+{% endblock %}
+{% block content %}
+    {% autoescape on %}
+        <div class="starter-template">
+            <h1>{% trans "Django 1.8 - Polls App" %}</h1>
+
+            <p class="lead">{% trans "Application" %} {% trans "from" %} {% trans "django" %} {% trans "tutorial" %} {% trans "with added" %}
+                bootstrap 4 {% trans "and" %} {% trans "login functionality" %}.</p>
+        </div>
+        <div>
+            <a class="btn btn-lg btn-primary pull-right bt btn-responsive "
+               href="{% url 'polls:create_question' %}">{% trans "Create a new question:" %}</a>
+        </div>
+        {% if latest_question_list %}
+            {% if is_paginated %}
+                <ul class="no-padding pagination pagination-sm">
+                    {% if page_obj.has_previous %}
+                        <li><a class="pagi" href="/polls?page={{ page_obj.previous_page_number }}">
+                            <span>&laquo;</span>
+                        </a></li>
+                    {% else %}
+                        <li class="disabled"><a class="pagi" href="#"><span>&laquo;</span></a></li>
+                    {% endif %}
+                    {% for field in page_obj.paginator.page_range %}
+                        {% if field == page_obj.number %}
+                            <li class="active"><a>{{ field }}<span class="sr-only"></span></a></li>
+                        {% else %}
+                            <li><a class="pagi" href="/polls?page={{ field }}">{{ field }}</a></li>
+                        {% endif %}
+                    {% endfor %}
+                    {% if page_obj.has_next %}
+                        <li><a class="pagi" href="/polls?page={{ page_obj.next_page_number }}">
+                            <span>&raquo;</span>
+                        </a></li>
+                    {% else %}
+                        <li class="disabled"><a class="pagi" href="#"><span>&raquo;</span></a></li>
+                    {% endif %}
+                </ul>
+            {% endif %}
+            <table id="index-tab" class="table table-striped info">
+                <tr class="text-uppercase">
+                    <th>{% trans "questions" %}</th>
+                    <th>{% trans "choices" %}</th>
+                    <th>{% trans "time" %}</th>
+                    <th>{% trans "action's" %}</th>
+                </tr>
+                {% for question in latest_question_list %}
+                    <tr>
+                        <td>
+                            <a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a>
+                        </td>
+                        <td class="small">
+                            {% if question.choice_set.all|length > 0 %}
+                                <table class="table-condensed table-responsive small info">
+                                    {% for choice in question.choice_set.all %}
+                                        <tr>
+                                            <th id="thnr_{{ forloop.counter }}{{ question.id }}">
+                                                {{ forloop.counter }}.
+                                            </th>
+                                            <th id="thch_{{ forloop.counter }}{{ question.id }}">
+                                                {{ choice.choice_text }}
+                                            </th>
+                                            <th id="thv_{{ forloop.counter }}{{ question.id }}">
+                                                <strong>{{ choice.votes }}</strong>
+
+                                            </th>
+                                            <th id="thv_2{{ forloop.counter }}{{ question.id }}">
+                                                {% if choice.votes > 0 %}
+                                                    {% blocktrans count counter=choice.votes %} vote
+                                                    {% plural %} votes {% endblocktrans %}
+                                                {% else %}
+                                                    {% trans "no votes" %}
+                                                {% endif %}
+                                            </th>
+                                        </tr>
+                                    {% endfor %}
+                                </table>
+                            {% endif %}
+                        </td>
+                        <td>
+                            {{ question.pub_date }}
+                        </td>
+                        <td>
+                            <form method="post" action="{% url 'polls:delete_question' question.pk %}">
+                                {% csrf_token %}
+                                <input type="submit" class="btn btn-sm btn-danger" value="{% trans "delete" %}"/>
+                                <a class="btn btn-sm btn-info"
+                                   href="{% url 'polls:edit_question' question.pk %}">{% trans "edit" %}</a>
+                            </form>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </table>
+            {% if is_paginated %}
+                <div class="text-center">
+                    <ul class="pagination pagination-lg">
+                        {% if page_obj.has_previous %}
+                            <li><a class="pagi" href="/polls?page={{ page_obj.previous_page_number }}">
+                                <span>&laquo;</span>
+                            </a></li>
+                        {% else %}
+                            <li class="disabled"><a class="pagi" href="#"><span>&laquo;</span></a></li>
+                        {% endif %}
+                        {% for field in page_obj.paginator.page_range %}
+                            {% if field == page_obj.number %}
+                                <li class="active"><a>{{ field }}<span class="sr-only"></span></a></li>
+                            {% else %}
+                                <li><a class="pagi" href="/polls?page={{ field }}">{{ field }}</a></li>
+                            {% endif %}
+                        {% endfor %}
+                        {% if page_obj.has_next %}
+                            <li><a class="pagi" href="/polls?page={{ page_obj.next_page_number }}">
+                                <span>&raquo;</span>
+                            </a></li>
+                        {% else %}
+                            <li class="disabled"><a class="pagi" href="#"><span>&raquo;</span></a></li>
+                        {% endif %}
+                    </ul>
+                </div>
+            {% endif %}
+        {% else %}
+            <p>No polls are available.</p>
+        {% endif %}
+    {% endautoescape %}
+{% endblock %}
